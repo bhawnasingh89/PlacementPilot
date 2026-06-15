@@ -1,0 +1,298 @@
+/* =========================
+   GLOBAL
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(248, 246, 229);
+  color: #0f230f;
+  overflow-x: hidden;
+}
+
+/* =========================
+   NAV BUTTONS (TOP RIGHT)
+========================= */
+
+.hero-actions {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  gap: 12px;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  font-size: 14px;
+}
+
+/* Create account */
+.btn.primary{
+  background-color: rgb(46, 121, 79);
+  width:170px;
+  height:35px;
+  color: white;
+  border: 1px solid rgb(46, 121, 79);
+  border-radius: 10px;
+  font-size:0.75rem;
+ margin-top:10px;
+}
+
+/*Sign-in */
+
+.btn.secondary{
+  color: rgb(35, 95, 61);
+}
+
+.btn.secondary:hover {
+  color:  rgb(31, 126, 31);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* LOGO (3 GREEN MIX) */
+
+.navbar{
+  display:flex;
+  justify-content: space-between;
+}
+.hero-title{
+  font-size: larger;
+  margin-left:40px;
+  margin-top:30px;
+}
+
+.hero-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-color: rgb(16, 65, 37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-title span {
+  background-color:rgb(33, 102, 63);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-btn{
+  background-color: white;
+  width:250px;
+  height:40px;
+  color: rgb(16, 65, 37);
+  border: 1px solid rgb(223, 225, 224);
+  border-radius: 10px;
+  font-size:0.95rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin-top:40px;
+ text-decoration: none;
+}
+
+.hero-btn:hover{
+  background-color: rgb(248, 246, 229) ;
+}
+/* BIG TAGLINE */
+.hero-subtitle {
+  margin-top: 10px;
+  font-size: 2.85rem;
+  font-weight: 900;
+  background: linear-gradient(
+    90deg,
+   rgb(16, 65, 37),
+   rgb(33, 102, 63)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(0, 100, 0, 0.15);
+}
+
+/* DESCRIPTION */
+.hero-text {
+  margin-top: 25px;
+  max-width: 650px;
+  font-size: 1.1rem;
+  color: #919291;
+  line-height: 1.6;
+}
+
+/* =========================
+   FEATURES SECTION
+========================= */
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.feature-card {
+  width: 280px;
+  padding: 25px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid  rgba(255, 255, 255, 0.6);
+  transition: 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  border-left: 6px solid  rgb(4, 49, 4);
+}
+
+.feature-card h3 {
+  color: rgb(4, 49, 4);
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #919291;
+}
+
+/* =========================
+   LOGIN / REGISTER (END STYLE)
+========================= */
+
+.container {
+  height: 500px;
+  width:600px;
+  margin-top:4%;
+  margin-left:27%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color:  rgb(248, 246, 229);
+}
+
+.container h2 {
+  font-size: 1.5rem;
+  color: rgb(16, 65, 37);
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.container p {
+  color: #919291;
+  font-size: 0.95rem;
+  font-weight: 100;
+  margin-top: 15px;
+}
+
+/* FORM */
+form {
+  width: 340px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* LABEL */
+label {
+  display: block;
+  font-size: 13px;
+  color: rgb(16, 65, 37);
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #919291;
+  outline: none;
+  transition: 0.3s;
+  background: white;
+}
+
+input:focus {
+  border-color:  #919291;
+  box-shadow: 0 0 10px rgba(50, 205, 50, 0.3);
+}
+
+/* MAIN BUTTON */
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: rgb(25, 90, 53);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.container p {
+  text-align: center;
+  font-size: 12px;
+}
+
+/* LOGIN LINK */
+.btn.secondary {
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    right: 15px;
+  }
+}
