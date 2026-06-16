@@ -2,6 +2,8 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import UploadResume from "./pages/UploadResume";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return(
@@ -10,7 +12,8 @@ function App() {
        <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-
+        <Route path="/upload-resume" element={<UploadResume />} />
+        <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
     </BrowserRouter>
   );

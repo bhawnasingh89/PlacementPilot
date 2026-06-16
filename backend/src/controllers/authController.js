@@ -64,10 +64,12 @@ export async function login(req,res) {
                 message:"Invalid credentials"
             });
          }
-
+        
+         console.log("JWT_SECRET during login:", process.env.JWT_SECRET);
+         
          const token = jwt.sign(
             {id:user._id},
-            config.JWT_SECRET,
+            process.env.JWT_SECRET,
             {expiresIn:"1d"}
          );
          res.status(200).json({

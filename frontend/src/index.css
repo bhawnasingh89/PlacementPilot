@@ -296,3 +296,235 @@ button:hover {
     right: 15px;
   }
 }
+
+/* =========================
+   UPLOAD RESUME PAGE
+========================= */
+
+.upload-container {
+  min-height: 100vh;
+  background: rgb(248, 246, 229);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.upload-card {
+  width: 500px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.upload-title {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(
+    90deg,
+    rgb(16, 65, 37),
+    rgb(33, 102, 63)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.upload-subtitle {
+  margin-top: 10px;
+  color: #919291;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.upload-box {
+  margin-top: 30px;
+  padding: 30px;
+  border: 2px dashed rgb(33, 102, 63);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.upload-box:hover {
+  border-color: rgb(16, 65, 37);
+}
+
+.file-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.file-name {
+  margin-top: 12px;
+  font-size: 14px;
+  color: rgb(16, 65, 37);
+  font-weight: 600;
+}
+
+.upload-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: rgb(25, 90, 53);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.upload-btn:hover {
+  background: rgb(16, 65, 37);
+  transform: translateY(-2px);
+}
+
+.upload-btn:disabled {
+  background: #919291;
+  cursor: not-allowed;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.success {
+  color: rgb(33, 102, 63);
+}
+
+.error {
+  color: #d9534f;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+  .upload-card {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .upload-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* =========================
+   DASHBOARD PAGE
+========================= */
+
+.dashboard {
+  min-height: 100vh;
+  background: rgb(248, 246, 229);
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+
+.dashboard h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+
+  background: linear-gradient(
+    90deg,
+    rgb(16, 65, 37),
+    rgb(33, 102, 63)
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Resume Card */
+
+.dashboard-card {
+  width: 450px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+
+  padding: 30px;
+  border-radius: 20px;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+
+  text-align: center;
+
+  transition: 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Title */
+
+.dashboard-card h3 {
+  color: rgb(16, 65, 37);
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+/* Status Text */
+
+.dashboard-card p {
+  color: #919291;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+/* Upload Button */
+
+.dashboard-card button {
+  width: 100%;
+  padding: 14px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: rgb(25, 90, 53);
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.dashboard-card button:hover {
+  background: rgb(16, 65, 37);
+  transform: scale(1.02);
+}
+
+/* Link Reset */
+
+.dashboard-card a {
+  text-decoration: none;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .dashboard-card {
+    width: 100%;
+  }
+
+  .dashboard h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
